@@ -10,104 +10,32 @@
         <link rel="shortcut icon" href="assets/img/favicon.png">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+        <link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="assets/css/styles.css">
     </head>
 
     <body>
         <div class="container" style="margin-bottom: 70px">
             <h1>Visualization</h1>
-            <form method="POST">
-                <div class="row">
-                    <div class="col-md-5">
-                        <div class="input-group subnet">
-                            <span class="input-group-addon">Subnet</span>
-                            <select class="form-control" name="subnet"></select>
-                        </div>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="input-group">
-                            <span class="input-group-addon">IP Address</span>
-                            <input class="form-control" type="text" name="ip"
-                            pattern="((^|\.)((25[0-5])|(2[0-4]\d)|(1\d\d)|([1-9]?\d))){4}$" required>
-                        </div>
-                        <br>
-                    </div>
-                    <div class="col-md-2">
-                        <input class="btn btn-info calculate" type="submit" value="Show Result"/>
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="input-group option">
+                        <span class="input-group-addon">Option</span>
+                        <select class="form-control" name="option">
+                            <option type="submit">งบกระทรวงสาธารณสุข</option>
+                            <option type="submit">จำนวนบุคลากรทางการแพทย์</option>
+                        </select>
+                        
                     </div>
                 </div>
-            </form>
+            </div>
 
-            <div class="hide result-wrapper">
-                <h1>Result</h1>
-                <table class="table table-striped">
-                    <tbody>
-                        <tr>
-                            <td>IP Address</td>
-                            <td>0.0.0.1</td>
-                        </tr>
-                        <tr>
-                            <td>Network Address</td>
-                            <td>0.0.0.0</td>
-                        </tr>
-                        <tr>
-                            <td>Usable Host IP Range</td>
-                            <td>0.0.0.1 - 0.0.0.2</td>
-                        </tr>
-                        <tr>
-                            <td>Broadcast Address</td>
-                            <td>0.0.0.3</td>
-                        </tr>
-                        <tr>
-                            <td>Total Number of Hosts</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>Number of Usable Hosts</td>
-                            <td>2</td>
-                        </tr>
-                        <tr>
-                            <td>Subnet Mask</td>
-                            <td>255.255.255.252</td>
-                        </tr>
-                        <tr>
-                            <td>Wildcard Mask</td>
-                            <td>0.0.0.3</td>
-                        </tr>
-                        <tr>
-                            <td>Binary Subnet Mask</td>
-                            <td>11111111.11111111.11111111.11111100</td>
-                        </tr>
-                        <tr>
-                            <td>IP Class</td>
-                            <td>C</td>
-                        </tr>
-                        <tr>
-                            <td>CIDR Notation</td>
-                            <td>/30</td>
-                        </tr>
-                        <tr>
-                            <td>IP Type</td>
-                            <td>Public</td>
-                        </tr>
-                        <tr>
-                            <td>Short</td>
-                            <td>0.0.0.1 /30</td>
-                        </tr>
-                        <tr>
-                            <td>Binary ID</td>
-                            <td>00000000000000000000000000000001</td>
-                        </tr>
-                        <tr>
-                            <td>Integer ID</td>
-                            <td>1</td>
-                        </tr>
-                        <tr>
-                            <td>Hex ID</td>
-                            <td>0x1</td>
-                        </tr>
-                    </tbody> 
-                </table>
+            <div class="detail">
+                <h1 class="option">TEST</h1>
+                <div id="chart_div"></div>
+                <div id="piechart" style=" height: 500px;"></div>
             </div>
         </div>
 
@@ -115,6 +43,9 @@
         <footer>Tanaporn Thaitragulpanich - 5810506046</footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.6/js/mdb.min.js"></script> -->
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script src="assets/js/init.js"></script>
         <script src="assets/js/calculate.js"></script>
     </body>
