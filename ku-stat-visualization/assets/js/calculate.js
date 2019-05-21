@@ -47,7 +47,6 @@ function drawPersonnel() {
     data.sort([{column: 1, desc: true}]);
     var options = {
         fontName:'Bai Jamjuree',
-        // title: 'My Daily Activities',
         colors:['#594F4F', '#547980', '#45ADA8', '#9DE0AD', '#E5FCC2']
     };
 
@@ -59,7 +58,7 @@ function drawPersonnel() {
 function drawHIV() {
 
     var data = google.visualization.arrayToDataTable([
-      ['Year', 'เสียชีวิต', 'ป่วย'],
+      ['Year', 'เสียชีวิต', 'รักษาตัว'],
       ['2543', 8695, 72421],
       ['2544', 10113, 75205],
       ['2545', 15597, 83870],
