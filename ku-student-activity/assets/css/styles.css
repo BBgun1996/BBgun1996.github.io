@@ -16,3 +16,21 @@ footer {
     width: 100%;
     text-align: center;
 }
+
+::-webkit-scrollbar-track
+{
+	background-color: transparent !important;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    border-radius: 8px;
+	background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 8px;
+	background-color: #222;
+}
