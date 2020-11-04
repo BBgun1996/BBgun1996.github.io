@@ -21,7 +21,62 @@
         <div class="container" style="margin-bottom: 70px">
 
             <header>
-                <div data-include="img-header"></div>
+                <div data-fadeshow="quick-nav prev-next-nav slide-counter autoplay ken-burns">
+
+                    <!-- Radio -->
+                    <input type="radio" name="css-fadeshow" id="fs-slide-1" />
+                    <input type="radio" name="css-fadeshow" id="fs-slide-2" />
+                    <input type="radio" name="css-fadeshow" id="fs-slide-3" />
+                    <input type="radio" name="css-fadeshow" id="fs-slide-4" />
+                    <input type="radio" name="css-fadeshow" id="fs-slide-5" />
+
+                    <!-- Slides -->
+                    <div class="fs-slides">
+                        <div class="fs-slide">
+                            <div class="fs-slide-bg" style="background-image: url(./assets/img/the-clover-1.jpg);"></div>
+                        </div>
+                        <div class="fs-slide">
+                            <div class="fs-slide-bg" style="background-image: url(./assets/img/the-clover-3.jpg);"></div>
+                        </div>
+                        <div class="fs-slide">
+                            <div class="fs-slide-bg" style="background-image: url(./assets/img/the-clover-4.jpg);"></div>
+                        </div>
+                        <div class="fs-slide">
+                            <div class="fs-slide-bg" style="background-image: url(./assets/img/the-clover-5.jpg);"></div>
+                        </div>
+                        <div class="fs-slide">
+                            <div class="fs-slide-bg" style="background-image: url(./assets/img/the-clover-6.jpg);"></div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Navigation -->
+                    <div class="fs-quick-nav">
+                        <label class="fs-quick-btn" for="fs-slide-1"></label>
+                        <label class="fs-quick-btn" for="fs-slide-2"></label>
+                        <label class="fs-quick-btn" for="fs-slide-3"></label>
+                        <label class="fs-quick-btn" for="fs-slide-4"></label>
+                        <label class="fs-quick-btn" for="fs-slide-5"></label>
+                    </div>
+
+                    <!-- Prev Navigation -->
+                    <div class="fs-prev-nav">
+                        <label class="fs-prev-btn" for="fs-slide-1"></label>
+                        <label class="fs-prev-btn" for="fs-slide-2"></label>
+                        <label class="fs-prev-btn" for="fs-slide-3"></label>
+                        <label class="fs-prev-btn" for="fs-slide-4"></label>
+                        <label class="fs-prev-btn" for="fs-slide-5"></label>
+                    </div>
+
+                    <!-- Next Navigation -->
+                    <div class="fs-next-nav">
+                        <label class="fs-next-btn" for="fs-slide-1"></label>
+                        <label class="fs-next-btn" for="fs-slide-2"></label>
+                        <label class="fs-next-btn" for="fs-slide-3"></label>
+                        <label class="fs-next-btn" for="fs-slide-4"></label>
+                        <label class="fs-next-btn" for="fs-slide-5"></label>
+                    </div>
+
+                </div>
                 <h1>An elegant interior decoration home for you in a beautiful neighbourhood.</h1>
             </header>
 
@@ -73,13 +128,26 @@
                     <p>The Clover <br />
                         Soi Thong Lo 18, Khlong Tan Nuea, Watthana, Bangkok 10110</p>
                 </div>
-                <div data-include="map"></div>
+                <div class="map-responsive">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.728046071007!2d100.58208531483028!3d13.73490789035839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e29f2baa0d02a9%3A0x728ee74b3302ee29!2sThe%20Clover!5e0!3m2!1sen!2sth!4v1604338036301!5m2!1sen!2sth" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
         </div>
 
-        <div data-include="footer"></div>
+        <footer>
+            <div>
+                Tel. +66 81 702 1175
+                <a href="tel:+66-81-702-1175" style="display: inline-block;height: 22px;">
+                    <img class="icon" src="./assets/img/icon/phone.png" />
+                </a>
+                | wantipam@gmail.com
+                <a href="mailto:wantipam@gmail.com" style="display: inline-block;height: 22px;">
+                    <img class="icon" src="./assets/img/icon/mail.png" />
+                </a>
+            </div>
+        </footer>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script src="assets/js/data-includes.js"></script>
+<!--        <script src="assets/js/data-includes.js"></script>-->
     </body>
 </html>
