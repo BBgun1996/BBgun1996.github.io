@@ -1,0 +1,64 @@
+body {
+    font-family: 'Bai Jamjuree', 'Open Sans', sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+img.icon {
+    width: 22px;
+}
+
+
+.map-responsive {
+    overflow: hidden;
+    margin: 20px;
+    padding-bottom: min(400px, 56.25%);
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    right: 0;
+    height: min(400px, 100%);
+    width: min(600px, 100%);
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+::-webkit-scrollbar-track
+{
+	background-color: transparent !important;
+}
+
+::-webkit-scrollbar
+{
+    width: 10px;
+    border-radius: 8px;
+	background-color: transparent !important;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 8px;
+	background-color: #222;
+}
